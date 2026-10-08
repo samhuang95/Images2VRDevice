@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# Conversion inputs/outputs
+*.mp4
+*.mov
+*.mkv
+*.webm
+*.png
+!tests/**/*.png

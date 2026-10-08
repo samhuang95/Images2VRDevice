@@ -1,0 +1,26 @@
+[project]
+name = "video2sbs"
+version = "0.1.0"
+description = "2D video to side-by-side stereo (SBS) converter for phone-in-cardboard VR"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "imageio-ffmpeg>=0.6.0",
+    "numpy>=2.2.6",
+    "opencv-python-headless>=5.0.0.93",
+    "torch>=2.14.1",
+    "transformers>=5.19.0",
+]
+
+[project.scripts]
+video2sbs = "video2sbs:main"
+
+[build-system]
+requires = ["uv_build>=0.11.32,<0.12.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pillow>=12.3.0",
+    "pytest>=9.1.1",
+]
